@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    min-width: 340px;
+}
+
+container{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+container info-card{
+    background-color: white;
+    display: block;
+    padding: 20px;
+}
+container info-card h1{
+    font-size: 22px;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 20px;
+}
+container info-card .money-back{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 20px;
+}
+container info-card .description{
+    color: hsl(218, 22%, 67%);
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+subs-card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+subs-card sign-up{
+    background-color: hsl(179, 62%, 43%);
+    padding: 20px;
+}
+subs-card sign-up h1{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+subs-card sign-up .price{
+    display: inline-block;
+    font-size: 30px;
+}
+subs-card sign-up span{
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 10px;
+    font-family:  sans-serif;
+    letter-spacing: 0.8px;
+}
+
+subs-card sign-up .duration{
+    margin-top: 8px;
+    font-size: 13px;
+    font-family:  sans-serif;
+    letter-spacing: 0.7px;
+}
+subs-card sign-up button{
+    margin-top: 30px;
+    width: 240px;
+    padding: 14px;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    
+}
+
+subs-card why-us{
+    background-color: hsl(179, 62%, 60%);
+    padding: 20px;
+    padding-right: 90px;
+}
+subs-card why-us h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+subs-card why-us p{
+    font-size: 13px;
+    font-family: sans-serif;
+    line-height: 22px;
+    
+}
+
+@media screen and (min-width: 800px) {
+    subs-card{
+        display: flex;
+        flex-direction: row;
+        color: white;
+    }
+    container{
+        width: 600px;
+    }
+    subs-card sign-up{
+        padding-right: 40px;
+        padding-left: 30px;
+    }
+    subs-card sign-up button{
+        margin-bottom: 20px;
+    }
+    container info-card {
+        padding-left: 30px;
+        padding-right: 90px;
+    }
+    container info-card h1{
+        margin-top: 20px;
+        
+    }
+    container info-card .description{
+        margin-bottom: 17px;
+    }
+    subs-card why-us{
+        padding-left: 30px;
+    }
+}
